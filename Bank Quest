@@ -1,0 +1,16 @@
+# That exercise it's about a bank system. you put a input telling how much do you want, and then the bank print the money notes that the register need give to you.
+print("="*30)
+print("{:^30}".format("BANCO XXX"))
+print("="*30)
+
+valor = int(input("Digite o valor que você deseja sacar: "))
+notas = [200, 100, 50, 20, 10, 5, 2, 1]
+
+for nota in notas:
+    if valor >= nota:
+        qnt = valor // nota
+        print(f"{qnt} nota(s) de R$ {nota}")
+        valor = valor % nota
+    
+
+print("\nObrigado por utilizar nosso banco! :)")
