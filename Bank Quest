@@ -1,4 +1,4 @@
-# This exercise it's about a bank system. you put a input telling how much do you want, and then the bank print the money notes that the register need give to you.
+# This exercise is about a bank system. you input the amount you want withdraw, and then the bank outputs the banknotes that the cashier should give to you.
 print("="*30)
 print("{:^30}".format("BANCO XXX"))
 print("="*30)
