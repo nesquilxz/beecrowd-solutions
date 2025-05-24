@@ -1,0 +1,16 @@
+#é preciso ler 6 posições, x1, y1 e z1, x2, y2 e z2 armazenando duas lista.
+
+vet1 = []
+vet2 = []
+
+vet1.append(int(input("Digite o valor da coordenada x1: ")))
+vet1.append(int(input("Digite o valor da coordenada y1: ")))
+vet1.append(int(input("Digite o valor da coordenada z1: ")))
+
+vet2.append(int(input("Digite o valor da coordenada x2: ")))
+vet2.append(int(input("Digite o valor da coordenada y2: ")))
+vet2.append(int(input("Digite o valor da coordenada z2: ")))
+
+for n in range(len(vet1)):
+    valores = ["X", "Y", "Z"]
+    print(f"O valor da força resultante de {valores[n]}, é ( {valores[n]}1 + {valores[n]}2 ): {vet1[n]+vet2[n]}")
