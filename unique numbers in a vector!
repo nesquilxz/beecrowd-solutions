@@ -1,0 +1,13 @@
+# input numbers, append to an array, and then output how many unique numbers the vector has.
+
+vet = []
+unicos = []
+
+for n in range(10):
+    valor = (int(input(f"Digite o vetor {n} que você deseja, por favor: ").strip()))
+    if valor not in unicos:
+        unicos.append(valor)
+    vet.append(valor)
+
+
+print(f"Conforme os valores que você me disponibilizou, há cerca de {len(unicos)} valor(es) unico(s) no vetor.")
