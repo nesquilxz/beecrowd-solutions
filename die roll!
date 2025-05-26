@@ -1,0 +1,17 @@
+# roll a die and see what happens! the die count the percentage of how many times the number 6 appears!
+
+import random
+
+dado = [1, 2, 3, 4, 5, 6]
+vetor = []
+count = 0
+for n in range(50):
+    valor = random.choice(dado)
+    print(f"O valor do dado na rodada {n} caiu no número: {valor} !! ")
+    if valor == 6:
+        count += 1
+    vetor.append(valor)
+
+print(f"Valores de todas as 50 rodadas: {vetor}")
+percentual = (count / 50) * 100
+print(f"O percentual de números 6 foi de: {percentual}% !")
