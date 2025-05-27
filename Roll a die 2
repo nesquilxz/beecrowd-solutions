@@ -1,0 +1,17 @@
+#Roll a die, output a vector with the values and how many times the die get a X number
+
+import random
+
+
+vetor = []
+vezes = [0, 0, 0, 0, 0, 0]
+
+for n in range(100):
+    valor = random.randint(1, 6)
+    vetor.append(valor)
+    #coloca no vetor vezes a soma de 1.
+    vezes[valor-1] += 1
+
+
+print(vetor)
+print(f"O dado caiu no número 1 cerca de {vezes[0]} vezes, no número 2 cerca de {vezes[1]} vezes, no número 3 cerca de {vezes[2]} vezes, no número 4 cerca de {vezes[3]} vezes, no número 5 cerca de {vezes[4]} vezes, no número 6 cerca de {vezes[5]} vezes,")
