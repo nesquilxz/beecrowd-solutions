@@ -1,0 +1,20 @@
+# "Input four numbers, then output the average value and the number closest to the average (it's six)."
+
+valores = list(map(float, input("Digite os valores que você deseja, dando espaço para separá-los: ").split()))
+total = 0
+maisproximo = []
+
+for valor in valores:
+    total += valor
+    if valor >= 6 and valor <= 8:
+        maisproximo.append(valor)
+
+media = total / len(valores)
+
+print(f"Vetor: {valores}")
+
+print(f"Média: {media}")
+                                     
+print(f"Valor mais próximo da média: {' '.join(map(str, maisproximo))}")
+
+
