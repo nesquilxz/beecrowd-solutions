@@ -1,0 +1,22 @@
+# Problem Summary – "Alumni Dinner Participation"
+# At Pascal University, one of the nation's oldest institutions, the library building needs renovation after centuries of supporting massive collections of books. To raise funds, the Alumni Association hosted several dinner events, inviting all former students.
+# Event organizers tracked which alumni attended each dinner. Now, they want to know if any single alumnus/alumna participated in every dinner event.
+
+
+
+while True:
+    
+    N,D = list(map(int, input().split()))
+    vezes = []
+    cont = 0
+    for n in range(D):
+        nvezes = int(input())
+        vezes.append(nvezes)
+        for n in vezes:
+            if n == 1:
+                cont += 1
+        if cont == len(D):
+            print("yes")
+
+    print("no")
+       
