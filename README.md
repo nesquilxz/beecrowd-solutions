@@ -1,2 +1,2 @@
-# beecrowd-solutions
+#solutions
 doing my best. everyday.
